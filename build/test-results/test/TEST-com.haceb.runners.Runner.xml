@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.haceb.runners.Runner" tests="2" skipped="0" failures="1" errors="0" timestamp="2023-08-14T14:09:12" hostname="DESKTOP-48NIGR7" time="626.835">
+  <properties/>
+  <testcase name="Registro de usuario exitoso" classname="com.haceb.runners.Runner" time="621.705"/>
+  <testcase name="Agregar producto al carrito" classname="com.haceb.runners.Runner" time="5.127">
+    <failure message="java.lang.IllegalArgumentException: bound must be positive" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:388)
+	at com.haceb.models.SeleccionAleatoria.seleccion(SeleccionAleatoria.java:17)
+	at com.haceb.steps.PerfilStep.elUsuarioSeleccionaUnaSubCategoriaAleatoriamente(PerfilStep.java:38)
+	at com.haceb.steps.PerfilStep$ByteBuddy$iogAm57n.elUsuarioSeleccionaUnaSubCategoriaAleatoriamente$accessor$vprcc7N2(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:518)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:498)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:211)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:198)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:86)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.haceb.steps.PerfilStep$ByteBuddy$iogAm57n.elUsuarioSeleccionaUnaSubCategoriaAleatoriamente(Unknown Source)
+	at com.haceb.stepDefinitions.RegistroStepDefinition.seleccione_una_subcategoria_aleatoriamente(RegistroStepDefinition.java:55)
+	at ✽.seleccione una subcategoria aleatoriamente(file:///C:/Users/herla/Documents/cursos/SQA/Haceb-POM/src/test/resources/features/Registro.feature:16)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[ago. 14, 2023 9:09:22 A.M. org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+ADVERTENCIA: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [prefs]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 43707
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1692022208.810][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+[1692022213.326][WARNING]: Timed out connecting to Chrome, retrying...
+ago. 14, 2023 9:10:20 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+ADVERTENCIA: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [prefs]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+ago. 14, 2023 9:10:21 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 115
+ago. 14, 2023 9:10:21 A.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.7.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[1692022380.401][SEVERE]: Timed out receiving message from renderer: 10.000
+[1692022380.612][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1692022390.625][SEVERE]: Timed out receiving message from renderer: 10.000
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
+?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+]]></system-err>
+</testsuite>
